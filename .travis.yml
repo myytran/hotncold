@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: EYloK2/q0uiw2ZbZKbkChzyb0ZDWS77lvobi45vEF1henJk0RqAd1lmbLZl50V91ujONzuaujEXs7stw4kMaAkV/JRrJSTkwwPKpNKJDnRom8NnvDwrfxdZ5AE8FKSzAJCbysMhDw1SRL/11Erk20IPMSeBfs+BkNQ2x2lbcWL7MM3ZI7IGWKi7zG0tMZYqDLZD6Cpykfe4Lx1WdKxqqkdJW+HYs7EYffslAmOz2coOjQRJfdIWXouFRPWwIlaMQrYDyhHlad2P/YoSnXXhTNl72kjV08pIkDrl22y6knoOJYXrEyqnhvt6Zv4T7fuRIhqupL+xe1CF+kibXNMtRd39Pec40x9NEy5DPHtN6ckb1GVG8iVIKr1jBxrK9xHb4Cq33NN0hUKajRhgr+MzrR5I0F4HYeQqyBc4MA+i3PKg5FCvDwM0CCDQ94edUwaHiwyzuhhjXGbwUN3ilcNlvgPM7QoaR0Z799Z03Lcdumm+BD1ucHLUQwAMCJ7hGhUbqMAXYa7qubdH6my9zd9zo7ncy5EBVBJIt4QHdSSEEEQeK7dAENdgI4V0/YQ3R4loc83oVRRIpTAAbYuBqbjet7KIeiv8GTLC3WAm67issqzQ72JVCRAqcsQJvraWCbkyTYFg+gAMgDPffz1ru0FFxt0M+vK1A6T94yVXbu3+NGq8=
+  app: hotncold
+  on:
+    repo: myytran/hotncold
