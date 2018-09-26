@@ -3,7 +3,7 @@ import { RESTART_GAME, MAKE_GUESS, GENERATE_AURAL_UPDATE} from './actions';
 //must declare initial state
 const initialState = {
   guesses: [],
-  feedback: "Make Guesses!",
+  feedback: 'Make your guess!',
   auralStatus: '',
   correctAnswer: Math.floor(Math.random() * 100) + 1
 
